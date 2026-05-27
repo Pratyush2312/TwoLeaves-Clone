@@ -1,0 +1,522 @@
+@font-face {
+  font-family: Reckless;
+  src: url(./fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(fonts/figtree.woff2);
+}
+
+@font-face {
+  font-family: Midnight;
+  src: url(fonts/midnight.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fbf9eb;
+}
+
+#reviews{
+  color: #FFB500;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: min(95%, 1200px);   mobile first approach 1200px - max desktop size */
+  width: 100%; /* Desktop first approach */
+  background-color: #fffefb;
+  font-family: Reckless;
+  padding: 1rem 1rem;
+  border-radius: 1vw;
+  font-size: 0.8rem;
+}
+
+.nav-part-1 {
+  gap: 1rem;
+  /* font-size: clamp(2rem, 5vw, 5rem);   clamp for mobile first */
+  width: 33%;
+  display: none;
+}
+
+.nav-part-2 h3 {
+  position: relative;
+  display: none;
+  font-weight: 300;
+}
+
+.nav-part-2 h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(21, 21, 21);
+  width: 0;
+  height: 0.5px;
+  transition: all ease 0.3s;
+}
+
+.nav-part-2 h3:hover::after {
+  width: 100%;
+  /* transform: translateX(50%); */
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  display: flex;
+}
+
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-part-2 {
+  display: flex;
+  width: 33%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-part-2 svg {
+  width: 30%;
+}
+
+.nav-part-1 h3 {
+  font-weight: 300;
+}
+
+#menu-icon {
+  font-size: 2rem;
+  width: 33%;
+}
+
+#section1 {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/assets/AlpineBerry_mobile.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+#section1 h1 {
+  font-size: clamp(3rem, 6vw, 7rem);
+  text-align: center;
+  font-family: Reckless;
+  color: white;
+  font-weight: 500;
+}
+
+#section1 p {
+  font-size: clamp(1.2rem, 1vw, 1rem);
+  font-family: Figtree;
+  font-weight: 400;
+  text-align: center;
+  max-width: 100%;
+  color: white;
+}
+
+#section1 button {
+  background-color: rgb(42, 40, 87);
+  color: white;
+  padding: 1rem 4rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+  font-family: Figtree;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* #section1 button:hover{2
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+} */
+
+#section2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fbf9eb;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 1rem;
+}
+
+.section2-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2-text h1 {
+  font-weight: 100;
+  width: 80%;
+}
+
+.best-seller span {
+  background-color: #daaeea;
+  padding: 0.1rem 0.5rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+  font-family: Midnight;
+  border-radius: 0.4rem;
+  display: inline-block;
+  transform: rotateZ(-2deg);
+  border: 1px solid black;
+}
+
+.discover span {
+  background-color: #FF7F31;
+  padding: 0.1rem 0.5rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+  font-family: Midnight;
+  border-radius: 0.4rem;
+  display: inline-block;
+  transform: rotateZ(-2deg);
+  border: 1px solid black;
+}
+
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+#section2 h1 {
+  font-family: Reckless;
+  text-align: center;
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
+}
+
+.items {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+}
+.item1, .item2, .item3, .item4 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content p:nth-child(1) {
+  font-family: Reckless;
+  font-size: clamp(1.7rem, 5vw, 2rem);
+}
+
+.content span {
+  font-family: Figtree;
+  font-size: 0.8rem;
+}
+
+.content p:nth-child(3) {
+  font-family: Figtree;
+  color: rgb(65, 65, 65);
+  font-size: 0.9rem;
+}
+
+.card1, .card2, .card3, .card4 {
+  min-height: 22rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.card1{
+  background-color: #c1ee91;
+}
+
+.card2{
+  background-color: #FFD884;
+}
+
+.card3{
+  background-color: #B0E8C1;
+}
+
+.card4{
+  background-color: #C1E4F8;
+}
+
+.items img{
+  transition: all ease 0.3s;
+}
+
+.items img:hover{
+  scale: 1.1;
+}
+
+#tag {
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.6rem;
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  border: 1px solid black;
+  font-weight: 300;
+  font-family: Midnight;
+}
+#rating {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+}
+#add {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-radius: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  border: 1px solid black;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore {
+  padding: 1rem 1rem;
+  width: 50%;
+  border-radius: 2rem;
+  border: none;
+  background-color: rgb(42, 40, 87);
+  color: white;
+  cursor: pointer;
+}
+
+#section3{
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section3-text h1 {
+  font-family: Reckless;
+  font-weight: 100;
+  width: 100%;
+}
+
+input {
+  padding: 1.8rem 3rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  font-size: 3rem;
+  font-family: serif;
+  color: #9B978F;
+  outline: none;
+}
+
+input::placeholder {
+  color: #9B978F;
+  font-size: 2.4rem;
+}
+
+.vibe{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.vibe p{
+  font-family: Figtree;
+}
+
+.vibe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.vibe-container button {
+  padding: 1rem 1.8rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 1.2rem;
+  background-color: #DCE7F8;
+  font-size: 2.3rem;
+  font-family: Reckless;
+  color: #1f1f1f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vibe-container button:hover {
+  background-color: #c9daf7;
+}
+
+.divider{
+  background-color: black;
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: min(95%, 1200px);   mobile first approach 1200px - max desktop size */
+    width: 100%;
+    /* Desktop first approach */
+    background-color: #fffefb;
+    font-family: Reckless;
+    padding: 0.5rem 1rem;
+    border-radius: 1vw;
+    font-size: 0.8rem;
+  }
+
+  .nav-part-1 {
+    gap: 1.8rem;
+    /* font-size: clamp(2rem, 5vw, 5rem);   clamp for mobile first */
+    width: 35%;
+    display: flex;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  .logo {
+    width: 8vw;
+    display: flex;
+  }
+
+  .nav-part-1 h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  .nav-part-2 {
+    width: 40%;
+  }
+
+  .nav-part-2 svg {
+    width: 15%;
+  }
+
+  .nav-part-2 h3 {
+    white-space: nowrap;
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+  }
+
+  #section1 {
+    display: flex;
+    align-items: start;
+    background-image: url(assets/AlpineBerry.webp);
+    background-position: center;
+    background-size: 130%;
+  }
+
+  #section1 h1 {
+    width: 35%;
+    text-align: start;
+  }
+
+  #section1 p {
+    text-align: start;
+    max-width: 35%;
+  }
+
+  #section1 button {
+    width: 15%;
+  }
+
+  .section2-text h1 {
+    width: 50%;
+  }
+
+  .best-seller {
+    display: flex;
+    justify-content: center;
+  }
+
+  .best-seller span {
+    scale: 1.3;
+  }
+  .explore {
+    width: 15%;
+  }
+
+  .items {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  input{
+    width: 30%;
+    transition: all ease 0.3s;
+  }
+  input:focus{
+    width: 100%;
+  }
+
+  #section3{
+    padding: 5rem 10rem;
+  }
+
+  .discover {
+    display: flex;
+    justify-content: left;
+    margin-left: 3%;
+  }
+
+  .discover span {
+    scale: 1.5;
+  }
+}
