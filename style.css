@@ -30,8 +30,8 @@ main {
   background-color: #fbf9eb;
 }
 
-#reviews{
-  color: #FFB500;
+#stars {
+  color: #ffb500;
 }
 
 nav {
@@ -192,7 +192,7 @@ nav {
 }
 
 .discover span {
-  background-color: #FF7F31;
+  background-color: #ff7f31;
   padding: 0.1rem 0.5rem;
   font-size: 2.3rem;
   font-weight: 500;
@@ -221,13 +221,15 @@ nav {
   gap: 2rem;
   overflow-x: auto;
 }
-.item1, .item2, .item3, .item4 {
+.item1,
+.item2,
+.item3,
+.item4 {
   width: 90%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 
 .content {
   display: flex;
@@ -251,7 +253,10 @@ nav {
   font-size: 0.9rem;
 }
 
-.card1, .card2, .card3, .card4 {
+.card1,
+.card2,
+.card3,
+.card4 {
   min-height: 22rem;
   position: relative;
   display: flex;
@@ -261,27 +266,27 @@ nav {
   border-radius: 0.5rem;
 }
 
-.card1{
+.card1 {
   background-color: #c1ee91;
 }
 
-.card2{
-  background-color: #FFD884;
+.card2 {
+  background-color: #ffd884;
 }
 
-.card3{
-  background-color: #B0E8C1;
+.card3 {
+  background-color: #b0e8c1;
 }
 
-.card4{
-  background-color: #C1E4F8;
+.card4 {
+  background-color: #c1e4f8;
 }
 
-.items img{
+.items img {
   transition: all ease 0.3s;
 }
 
-.items img:hover{
+.items img:hover {
   scale: 1.1;
 }
 
@@ -332,7 +337,7 @@ nav {
   cursor: pointer;
 }
 
-#section3{
+#section3 {
   padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -352,21 +357,21 @@ input {
   background-color: transparent;
   font-size: 3rem;
   font-family: serif;
-  color: #9B978F;
+  color: #9b978f;
   outline: none;
 }
 
 input::placeholder {
-  color: #9B978F;
+  color: #9b978f;
   font-size: 2.4rem;
 }
 
-.vibe{
+.vibe {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.vibe p{
+.vibe p {
   font-family: Figtree;
 }
 
@@ -380,7 +385,7 @@ input::placeholder {
   padding: 1rem 1.8rem;
   border: 1px solid #3d3d3d;
   border-radius: 1.2rem;
-  background-color: #DCE7F8;
+  background-color: #dce7f8;
   font-size: 2.3rem;
   font-family: Reckless;
   color: #1f1f1f;
@@ -392,12 +397,101 @@ input::placeholder {
   background-color: #c9daf7;
 }
 
-.divider{
+.divider {
   background-color: black;
   display: block;
   width: 100%;
   height: 0.1rem;
 }
+
+#section4 {
+  background-image: url(assets/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp);
+  min-height: 200vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 2rem 5rem;
+  position: relative;
+  gap: 10rem;
+}
+
+.origins span {
+  background-color: #a2c9fc;
+  padding: 0.1rem 0.5rem;
+  font-size: 2.3rem;
+  white-space: nowrap;
+  font-weight: 500;
+  font-family: Midnight;
+  border-radius: 0.4rem;
+  display: inline-block;
+  transform: rotateZ(-2deg);
+  border: 1px solid black;
+}
+
+#kettle {
+  position: absolute;
+  top: 1%;
+  right: 4%;
+  width: 8rem;
+}
+
+#head {
+  font-family: Midnight;
+  color: white;
+  font-size: clamp(5rem, 10vw, 10rem);
+  text-align: center;
+}
+
+#subhead h1 {
+  font-family: Reckless;
+  color: white;
+  text-align: center;
+  width: 20rem;
+  font-size: clamp(1.8rem, 3vw, 5rem);
+  font-weight: 100;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 82vw;
+}
+
+.icons div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 8rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icons p {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.icons img {
+  width: 5rem;
+}
+
+.story {
+  padding: 1rem 1rem;
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-family: Figtree;
+  font-size: 1rem;
+}
+
+
 
 @media (min-width: 768px) {
 }
@@ -498,15 +592,15 @@ input::placeholder {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  input{
+  input {
     width: 30%;
     transition: all ease 0.3s;
   }
-  input:focus{
+  input:focus {
     width: 100%;
   }
 
-  #section3{
+  #section3 {
     padding: 5rem 10rem;
   }
 
@@ -518,5 +612,36 @@ input::placeholder {
 
   .discover span {
     scale: 1.5;
+  }
+
+  #head {
+    width: 50%;
+  }
+
+  #subhead {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #subhead h1 {
+    width: 80%;
+    font-weight: 400;
+  }
+
+  .origins span {
+    padding: 0 0.2rem;
+    font-size: 4rem;
+    white-space: nowrap;
+    font-weight: 500;
+    font-family: Midnight;
+    border-radius: 0.4rem;
+    display: inline-block;
+    transform: rotateZ(-2deg);
+    border: 1px solid black;
+  }
+
+  .story{
+    width: 20%;
   }
 }
