@@ -652,6 +652,46 @@ input::placeholder {
   display: none;
 }
 
+#section6 {
+  height: 100vh;
+}
+
+#section6 .left {
+  background-image: url("https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=1125.0");
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+}
+
+#section6 .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 50%;
+  background-color: #2a2857;
+  padding: 12rem 4rem 14rem;
+  gap: 2rem;
+}
+
+#section6 .right h1 {
+  color: white;
+  font-family: Reckless;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+#section6 .right p {
+  color: white;
+  font-family: Figtree;
+  /* scale: 1.2; */
+}
+
+#section6 .right button {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
 @media (min-width: 768px) {
 }
 
@@ -763,6 +803,10 @@ input::placeholder {
     padding: 5rem 10rem;
   }
 
+  .section3-text h1{
+    font-size: 3.7rem;
+  }
+
   .discover {
     display: flex;
     justify-content: left;
@@ -824,5 +868,44 @@ input::placeholder {
     font-size: 3.5rem;
     border-radius: 0.4rem;
     margin-left: 20%;
+  }
+
+  #section5 {
+    min-height: 150vh;
+  }
+
+  #section6 {
+    display: flex;
+  }
+
+  #section6 .left {
+    width: 50%;
+    height: 80vh;
+  }
+
+  #section6 .right {
+    width: 50%;
+    height: 80vh;
+  }
+
+  #section6 .right h1 {
+    font-size: 5.5rem;
+  }
+
+  #section6 .right p {
+    font-size: 1.4rem;
+    width: 30rem;
+  }
+
+  #section6 .right {
+    display: flex;
+    text-align: start;
+    background-color: #2a2857;
+    padding: 12rem 4rem 14rem;
+    gap: 2rem;
+  }
+
+  #section6 button{
+    width: 27%;
   }
 }
